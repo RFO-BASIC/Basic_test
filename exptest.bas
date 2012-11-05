@@ -2,7 +2,8 @@
 ! expression processing.
 ! The numbers on each line
 ! should match
-
+!debug.on
+debug.echo.on
 a=sqr(1000/10)/10
 print 1,a
 a=(300+10^2)/4
@@ -11,6 +12,8 @@ a = 5 + (18) * 10
 print 185,a
 a= 2*(10) + 1
 print 21, a
+a = -(100-12)++(8-20)
+print -100, a
 
 a$ ="abcd"
 b$ = "defg"
@@ -37,6 +40,7 @@ print  6, abs(3)*2
 print  8, abs(3)*2+2
  
 print  2, mod(7,2)*2
+print  1, mod(5.5,1.5)
  
 print 2, abs(-sqr(4)) 
  
@@ -60,8 +64,5 @@ a[(1+1)*4] =10
 print 10,a[8]
 
 end 
- 
- 
- 
- 
- 
+
+
