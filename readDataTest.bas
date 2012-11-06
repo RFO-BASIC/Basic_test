@@ -3,27 +3,27 @@ REM Start of BASIC! Program
 ! Tests for the Read feature
 
 !Test numeric data
-read.data 1,2,3
-read.next i,j,k
-print "Should print: 1,2,3"
-print i,j,k
+READ.DATA 1,2,3
+READ.NEXT i,j,k
+PRINT "Should print: 1,2,3"
+PRINT i,j,k
 
 !Test string data
-read.data "a","b","c"
-read.next p$,q$,r$
-print "Should print: a, b, c"
-print p$, q$, r$
+READ.DATA "a","b","c"
+READ.NEXT p$,q$,r$
+PRINT "Should print: a, b, c"
+PRINT p$, q$, r$
 
 !Test read.from
-read.from 5
-read.next x$, y$
-print "Should print: b,c"
-print x$, y$
+READ.FROM 5
+READ.NEXT x$, y$
+PRINT "Should print: b,c"
+PRINT x$, y$
 
-print ""
-print "Error tests follow."
-print "Tests require lines uncommented."
-print ""
+PRINT ""
+PRINT "Error tests follow."
+PRINT "Tests require lines uncommented."
+PRINT ""
 
 !Uncomment to test no more data
 !read.next a
@@ -31,8 +31,8 @@ print ""
 !Uncomment to test read.from too big
 !read.from 8
 
-read.from 1
+READ.FROM 1
 !uncomment to test type mismatch
 !read.next t$
-read.from 4
+READ.FROM 4
 !read.next d
