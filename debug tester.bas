@@ -34,6 +34,7 @@ z = 133
 a$ = STR$(add(2,56))+"wow cool"
 DEBUG.SHOW.PROGRAM
 PRINT a$
+DEBUG.SHOW.WATCH
 PRINT add(add(12,15),add(54,34))
 
 REM test clear and redefining
@@ -70,6 +71,8 @@ DEBUG.SHOW.BUNDLE bundle
 REM test show swapping
 
 DEBUG.SHOW.ARRAY array[]
+DEBUG.SHOW
 DEBUG.SHOW.STACK stack
 DEBUG.SHOW.LIST list
+DEBUG.SHOW
 DEBUG.SHOW.BUNDLE bundle
