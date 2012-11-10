@@ -3,9 +3,9 @@ REM Start of BASIC! Program
 ! Tests for the Read feature
 
 !Test numeric data
-READ.DATA 1,2,3
+READ.DATA 1,+2,-3
 READ.NEXT i,j,k
-PRINT "Should print: 1,2,3"
+PRINT "Should print: 1,2,-3"
 PRINT i,j,k
 
 !Test string data
@@ -36,3 +36,13 @@ READ.FROM 1
 !read.next t$
 READ.FROM 4
 !read.next d
+
+!uncomment to test junk after constant
+!read.data 1"abc",2
+!read.data "abc"1,2
+!read.data 1,2;
+
+!uncomment to test invalid data
+!read.data 1,a,"abc"
+
+END
