@@ -15,7 +15,7 @@ PRINT "Should print: a, b, c"
 PRINT p$, q$, r$
 
 !Test read.from
-READ.FROM 5
+READ.FROM 2+3
 READ.NEXT x$, y$
 PRINT "Should print: b,c"
 PRINT x$, y$
@@ -37,10 +37,12 @@ READ.FROM 1
 READ.FROM 4
 !read.next d
 
-!uncomment to test junk after constant
+!uncomment to test junk after parameter
 !read.data 1"abc",2
 !read.data "abc"1,2
 !read.data 1,2;
+!read.from 2;
+!read.next a$+2
 
 !uncomment to test invalid data
 !read.data 1,a,"abc"
